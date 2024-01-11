@@ -1,0 +1,52 @@
+@keyframes move-wheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-aerostat {
+  to {
+    transform: translate(350px, -1000px);
+  }
+}
+
+@keyframes move-birds {
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+@keyframes move-ufo {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200px, 375px);
+  }
+}
+
+.ufo {
+  animation-name: move-ufo;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.birds {
+  animation-name: move-birds;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.wind-mill {
+  animation-name: move-wheel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.aerostat {
+  animation-name: move-aerostat;
+  animation-duration: 20s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,47 @@
+.ship {
+  animation-name: move-ship;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+.clouds {
+  animation-name: move-clouds;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+.sun-small {
+  animation-name: move-sun;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.comet {
+  animation-name: move-comet;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-comet {
+  100% {
+    transform: translate(450px, 520px);
+  }
+}
+
+@keyframes move-clouds {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes move-sun {
+  to {
+    transform: translate(350px, -400px);
+  }
+}
+
+@keyframes move-ship {
+  to {
+    transform: translateX(1000px);
+  }
+}

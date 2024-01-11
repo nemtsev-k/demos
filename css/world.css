@@ -1,0 +1,190 @@
+body, html {
+  height: 100%
+}
+
+body {
+  margin: 0
+}
+
+.ancient-world {
+  position: relative;
+  margin: 0;
+  background-color: #166b7e
+}
+
+.ancient-world::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  margin-left: -50%;
+  background-image: linear-gradient(to bottom, #68a7a1 0, #68a7a1 425px, #056e7d 425px);
+  filter: blur(5px)
+}
+
+.ancient-world > div {
+  position: relative;
+  width: 660px;
+  height: 345px;
+  margin: 0 auto;
+  padding-top: 100px;
+  overflow: hidden;
+  background: #80cdc6 url("../images/world/world-1.svg") 0 106px no-repeat;
+  box-shadow: 0 0 200px 30px rgba(10, 10, 10, .1)
+}
+
+.sun-small {
+  top: 200px;
+  left: -100px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background: url("../images/world/sun-small.svg") 0 0 no-repeat
+}
+
+.clouds, .ship, .sun-small {
+  position: absolute
+}
+
+.clouds {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: url("../images/world/clouds.svg") 0 0 no-repeat;
+  width: 350px;
+  height: 260px
+}
+
+.ship {
+  bottom: 35px;
+  left: 20px;
+  width: 115px;
+  height: 115px;
+  background: url("../images/world/wooden-ship.svg") 0 0 no-repeat
+}
+
+.comet, .water {
+  position: absolute;
+  height: 50px
+}
+
+.water {
+  bottom: -5px;
+  background: url("../images/world/water.svg") 0 0 repeat-x;
+  left: 0;
+  z-index: 1;
+  width: 100%
+}
+
+.comet {
+  z-index: 10;
+  top: -100px;
+  left: 200px;
+  width: 100px;
+  background: url("../images/world/comet.svg") no-repeat 0 0
+}
+
+.mechanical {
+  background: url("../images/world/background-2.svg") 0 0;
+  background-size: cover
+}
+
+.mechanical-world {
+  position: relative;
+  margin: 0;
+  background-color: #025d50
+}
+
+.mechanical-world::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  margin-left: -50%;
+  background-image: linear-gradient(to bottom, #2d0529 0, #2d0529 440px, #025d50 440px);
+  filter: blur(5px)
+}
+
+.mechanical-world > div {
+  position: relative;
+  width: 660px;
+  height: 345px;
+  margin: 0 auto;
+  padding-top: 90px;
+  overflow: hidden;
+  background: #490943 url("../images/world/world-2.svg") 0 110px no-repeat
+}
+
+.alarm-clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 150px auto;
+  background: url("../images/world/alarm-clock.svg") 0 0 no-repeat
+}
+
+.alarm-clock.on-top {
+  margin-top: 30px
+}
+
+.arrow-small, .bell {
+  position: absolute
+}
+
+.bell {
+  top: 50px;
+  left: 127px;
+  width: 55px;
+  height: 55px;
+  background: url("../images/world/bell.svg") 0 0 no-repeat
+}
+
+.arrow-small {
+  top: 137px;
+  left: 144px;
+  width: 45px;
+  height: 45px;
+  background: url("../images/world/arrow-clock.svg") 0 0 no-repeat;
+  transform-origin: 20% 80%
+}
+
+.birds {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background: url("../images/world/birds.svg") 0 0 no-repeat
+}
+
+.aerostat {
+  bottom: 10px;
+  left: 15px;
+  width: 140px;
+  height: 140px;
+  background: url("../images/world/aerostat.svg") 0 0 no-repeat
+}
+
+.aerostat, .ufo, .wind-mill {
+  position: absolute
+}
+
+.wind-mill {
+  bottom: 75px;
+  background: url("../images/world/wind-wheel.svg") 0 0 no-repeat;
+  left: 258px;
+  width: 140px;
+  height: 140px
+}
+
+.ufo {
+  top: -100px;
+  left: -100px;
+  width: 100px;
+  height: 50px;
+  background: url("../images/world/ufo.svg") no-repeat 0 0
+}
