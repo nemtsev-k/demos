@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #eae9f2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 580px;
+  min-height: 50px;
+  margin-bottom: 12px;
+  padding: 0 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-left: 24px;
+}
+
+main {
+  width: 580px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feature {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 8px 32px 8px 40px;
+  border-radius: 32px 0;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 4px solid #6653d9;
+  box-shadow: 2px -2px 4px #6653d9;
+  background-color: #ffffff;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.feature::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  bottom: -4px;
+  left: -24px;
+  background-image: url("icon-ok-light.svg");
+}
+
+.hot::before {
+  background-image: url("icon-mark-light.svg");
+}
+
+.research::before {
+  background-image: url("icon-percent-light.svg");
+}
+
+.no-bull::before {
+  background-image: url("icon-cross-light.svg");
+}
+
+.news-block {
+  width: 580px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news-block p {
+  padding: 0 10px;
+}
+
+.subscription {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 20px 12px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-label {
+  position: absolute;
+  top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #6653d9;
+}
+
+.subscription-input {
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 30px;
+  border: 1px solid #eae9f2;
+  color: #333333;
+}
+
+.subscription-button {
+  font-size: 12px;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #6653d9;
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 580px;
+  min-height: 42px;
+  padding: 0 20px;
+  background-color: #6653d9;
+  margin-bottom: 200px;
+}
+
+.copyright {
+  color: #ffffff;
+}

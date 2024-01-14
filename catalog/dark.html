@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dark mode Demo </title>
+  <link rel="stylesheet" href="../css/light-mode.css" id="theme">
+  <style>
+    * {
+      font-family: "Segoe UI", sans-serif;
+      font-weight: 200;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: rgb(29, 29, 29);
+      transition: 1s;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    .wrapper {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 8px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 3px;
+      font-size: 1em;
+      margin-top: 1%;
+      outline: none;
+    }
+
+    button:hover {
+      background: rgb(45, 50, 102);
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <h1>Demonstration of Dark Mode by changing the style sheet</h1>
+  <button id="switchMode">Switch</button>
+</div>
+<script src="../js/dark.js"></script>
+</body>
+</html>
